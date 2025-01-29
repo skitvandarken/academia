@@ -1,0 +1,35 @@
+.fundo-cards{
+    background: linear-gradient(45deg, rgb(0, 48, 120), rgb(0, 97, 187), rgb(0, 85, 164));
+}
+.texto{
+    color:white !important;
+}
+
+.texto-2{
+    font-size: 20px !important;
+    font-weight: 400 ;
+}
+
+.fundo{
+
+    background-image: url('/img/bg-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.683);
+    color: white;
+    background-blend-mode: darken;
+    height: 100%;
+}
+
+
+.uk-card-default{
+    background: linear-gradient(45deg, rgb(255, 145, 0), rgba(255, 178, 55, 0.868), rgb(201, 115, 50));
+    color: white;
+       
+}
+
+.uk-card-header{
+    font-weight: 600;
+}
+

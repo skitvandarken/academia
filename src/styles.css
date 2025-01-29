@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body, p, a, li, h1, h2, h3, h4, h5, h6 {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+    font-style: normal;
+    color: #000000;
+}
+
+.big-title {
+    font-size: 48px; font-weight: 700; color:white;
+ }
+
+ .big-title-2 {
+    font-size: 28px; font-weight: 700; color:white;
+ }
+
+.texto-branco{
+    color:white;
+}   

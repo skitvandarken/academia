@@ -1,0 +1,95 @@
+.site-footer {
+
+    background-color: white;
+    padding: 40px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow at the top */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    color: white;
+  }
+
+  li, a, p {
+    color: #000000; /* Change icon color on hover */
+}
+  
+  .site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer content layout: 3 columns */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between columns */
+  
+  }
+  
+  /* Footer columns style */
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color:#000000;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #000000; /* Change link color on hover */
+  }
+  
+  
+  
+  /* Social Media Icons */
+  .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .social-links a:hover {
+    color: #000000; /* Change icon color on hover */
+  }
+  
+  /* Google Maps iframe styling */
+  .footer-column iframe {
+    border-radius: 8px; /* Rounded edges for the map */
+    margin-top: 15px;
+  }
+  
+  .link{
+    color: #000000; /* Change icon color on hover */
+  }
+
+
+  .fundo-preto{
+    background-color: black;
+    color: white;
+
+  }
