@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { MenuComponent } from '../../layout/menu/menu.component';
 import { RodapeComponent } from '../../layout/rodape/rodape.component';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms'
-import emailjs, {type EmailJSResponseStatus}, from '@emailjs '
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import emailjs, {type EmailJSResponseStatus} from '@emailjs/browser'
 
 @Component({
   selector: 'app-registo',
@@ -18,19 +18,12 @@ export class RegistoComponent {
 
   
 
-  translations: any;
-
-  useLanguage(language: string): void {
-    this.translate.use(language);
-    this.translations.use(language);
-}
-
   partnershipForm: FormGroup;
   selectedPartnership: string = '';
 
     
 
-  constructor(private fb: FormBuilder, private translate: TranslateService) {
+  constructor(private fb: FormBuilder) {
 
     
 
@@ -94,5 +87,7 @@ export class RegistoComponent {
       console.error('Falhou...', error.text);
       window.alert('Não foi possível enviar sua candidatura.');
     });
+
+}
 
 }
