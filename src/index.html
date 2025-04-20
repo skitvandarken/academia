@@ -34,46 +34,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit.min.js" as="script">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit-icons.min.js" as="script">
 </head>
 <body>
+    <a href="https://wa.me/244937754502/?text=Ol%C3%A1%2C%20estou%20interessado%20em%20servi%C3%A7o%20vosso%2C%20h%C3%A1%20algu%C3%A9m%20dispon%C3%ADvel%20agora%20para%20me%20atender%3F" target="_blank" class="whatsapp">
+        <!-- Add your WhatsApp button icon or text here -->
+        <span class="" uk-icon="icon: whatsapp; ratio: 3"></span>
+    
+      </a>
   <app-root></app-root>
-  <script>
-    (function(){
-        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-            window.chatbase = (...arguments) => {
-                if (!window.chatbase.q) {
-                    window.chatbase.q = [];
-                }
-                window.chatbase.q.push(arguments);
-            };
-            window.chatbase = new Proxy(window.chatbase, {
-                get(target, prop) {
-                    if (prop === "q") {
-                        return target.q;
-                    }
-                    return (...args) => target(prop, ...args);
-                }
-            });
-        }
+  
 
-        const onLoad = function() {
-            const script = document.createElement("script");
-            script.src = "https://www.chatbase.co/embed.min.js";
-            script.id = "fuxiUu8HI8v4edO3oNoT2";
-            script.domain = "www.chatbase.co";
-            document.body.appendChild(script);
-
-            script.onload = function() {
-                window.chatbase("send", "Olá! Bem-vindo ao DevCamp! Como posso te ajudar?");
-            };
-        };
-
-        if (document.readyState === "complete") {
-            onLoad();
-        } else {
-            window.addEventListener("load", onLoad);
-        }
-    })();
-</script>
 </body>
 </html>
