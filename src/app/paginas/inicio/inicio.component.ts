@@ -7,11 +7,13 @@ import { TestemunhosComponent } from '../../layout/testemunhos/testemunhos.compo
 import { ParceirosComponent } from '../../layout/parceiros/parceiros.component';
 import { CalendarioComponent } from '../../layout/calendario/calendario.component';
 import { RodapeComponent } from '../../layout/rodape/rodape.component';
+import { SlidershowComponent } from '../../layout/slidershow/slidershow.component';
 
 @Component({
   selector: 'app-inicio',
   imports: [
    MenuComponent,
+   SlidershowComponent,
    SliderComponent,
    ServicosComponent,
    EventosComponent, 

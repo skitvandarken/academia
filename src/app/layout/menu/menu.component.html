@@ -1,68 +1,39 @@
 <nav class="uk-navbar-container uk-navbar" uk-navbar>
-    <div class="uk-container">
-        <div class="uk-navbar-left uk-hidden@m">
-            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-nav"></a>
-        </div>
-        
-        <div class="uk-navbar-center uk-visible@m">
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a class="texto "><img class="uk-border-rounded" style="height: auto; width: 150px;" src="/img/logo-devcamp.png"></a>
-                </li>
-                <li>
-                    <a href="#acerca" uk-scroll>Quem somos</a>
-                </li>
-                <li>
-                    <a href="#servicos" uk-scroll="offset: 100">Serviços</a>
-                </li>
-                <li>
-                    <a href="#formacoes"  uk-scroll="offset: 100" >Formações</a>
-                </li>
-                <li>
-                    <a class=""  href="#parceiros" uk-scroll="offset: 100"  uk-scroll>Tornar-se Parceiro</a>
-                </li>
-                <li>
-                    <a class=""  href="#rodape" uk-scroll="offset: 100"  uk-scroll>Contacto</a>
-                </li>
-               
-             
-
-
-                
-                
-            </ul>
-        </div>
-
-        <div class="uk-navbar-right uk-visible@m"></div>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-nav"></a>
+        <!-- Logo visible on mobile -->
+        <a class="uk-navbar-item uk-logo uk-visible@m" href="#">
+            <img class="uk-border-rounded" style="height: auto; width: 150px;" src="/img/logo-devcamp.png">
+        </a>
     </div>
+    
+    <div class="uk-navbar-center uk-visible@m">
+        <ul class="uk-navbar-nav">
+            <li><a href="#acerca" uk-scroll>Quem somos</a></li>
+            <li><a href="#servicos" uk-scroll="offset: 100">Serviços</a></li>
+            <li><a href="#formacoes" uk-scroll="offset: 100">Formações</a></li>
+            <li><a href="#parceiros" uk-scroll="offset: 100">Tornar-se Parceiro</a></li>
+            <li><a href="#rodape" uk-scroll="offset: 100">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Empty right section for balance -->
+    <div class="uk-navbar-right uk-visible@m"></div>
 </nav>
 
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+<!-- Off-canvas menu -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
     <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-default">
-            <li>
-                <a class="texto "><img class="uk-border-rounded" style="height: auto; width: 150px;" src="/img/logo-devcamp.png"></a>
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default uk-margin-small-left">
+            <li class="uk-nav-header uk-margin-large-top">
+                <img class="uk-border-rounded" style="height: auto; width: 150px;" src="/img/logo-devcamp.png">
             </li>
-            <li>
-                <a style="color: black;" href="#acerca" uk-scroll>Quem somos</a>
-            </li>
-            <li>
-                <a style="color: black;" href="#servicos" uk-scroll="offset: 100">Serviços</a>
-            </li>
-            <li>
-                <a style="color: black;" href="#formacoes"  uk-scroll="offset: 100" >Formações</a>
-            </li>
-            <li>
-                <a style="color: black;" class=""  href="#parceiros" uk-scroll="offset: 100"  uk-scroll>Tornar-se Parceiro</a>
-            </li>
-            <li>
-                <a style="color: black;" class=""  href="#rodape" uk-scroll="offset: 100"  uk-scroll>Contacto</a>
-            </li>
-        
-
-
-            
-            
+            <li><a href="#acerca" uk-scroll>Quem somos</a></li>
+            <li><a href="#servicos" uk-scroll="offset: 100">Serviços</a></li>
+            <li><a href="#formacoes" uk-scroll="offset: 100">Formações</a></li>
+            <li><a href="#parceiros" uk-scroll="offset: 100">Tornar-se Parceiro</a></li>
+            <li><a href="#rodape" uk-scroll="offset: 100">Contacto</a></li>
         </ul>
     </div>
 </div>
